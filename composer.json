@@ -1,0 +1,30 @@
+{
+  "name": "ksolutionspro/symfony-notifier-smpp",
+  "type": "symfony-notifier-bridge",
+  "description": "Symfony Notifier bridge for SMPP Protocol",
+  "keywords": ["sms", "smpp", "notifier", "symfony", "symfony-notifier"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kacper Smółkowski",
+      "homepage": "https://github.com/ownede"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "symfony/http-client": "^6.4|^7.0",
+    "symfony/notifier": "^6.4|^7.0",
+    "glushkovds/php-smpp": "^0.7"
+  },
+  "autoload": {
+    "psr-4": { "Ksolutions\\SymfonyNotifierSmpp\\": "" },
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "require-dev": {
+    "symfony/event-dispatcher-contracts": "^3.6@dev",
+    "phpunit/phpunit": "^12.1@dev"
+  }
+}
